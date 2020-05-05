@@ -6,8 +6,8 @@ type Test struct {
 	X string
 }
 
-func New() Test {
-	return Test{X: "Hello "}
+func New(e string) Test {
+	return Test{X: e}
 }
 
 func (t Test) Hello(e string) {
@@ -24,7 +24,7 @@ func (t Test) printX() {
 }
 
 func main() {
-	t := New()
+	t := New("Helloy")
 	t.Hello("yo")
 	t.Hello("yoooo")
 
